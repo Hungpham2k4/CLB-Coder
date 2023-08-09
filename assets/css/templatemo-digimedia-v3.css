@@ -140,6 +140,16 @@ img {
 global styles
 --------------------------------------------- 
 */
+
+.form_login{
+  margin-top: 50px;
+  display: none;
+}
+
+
+
+
+
 html,
 body {
   background: #fff;

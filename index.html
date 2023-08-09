@@ -89,9 +89,22 @@
               <li class="scroll-to-section"><a href="#blog">Blog</a></li>
               <li class="scroll-to-section"><a href="#contact">Liên hệ</a></li>
               <li class="scroll-to-section">
-                <div class="border-first-button"><a href="#contact">Đăng nhập / Đăng ký</a></div>
+                <div id="login" class="border-first-button"><a href="">Đăng ký ngay</a></div>
               </li>
             </ul>
+            <script>
+              const login = document.getElementById('login');
+              login.addEventListener('click', function (event) {
+                event.preventDefault();
+
+                window.scrollTo({
+                  top: 3300,
+                  behavior: 'smooth'
+                });
+              });
+            </script>
+
+
             <a class='menu-trigger'>
               <span>Menu</span>
             </a>
@@ -163,7 +176,7 @@
                   Tăng khả năng giải quyết vấn đề khi hoạt động nhóm của bạn.
                   Sẽ được nhà trường tạo cơ hội cho thực tập sớm nếu đã đủ trình độ và kiến thức.
                   Tạo dựng được quan hệ với các chuyên gia công nghệ, các giảng viên dày dặn kinh nghiệm.</p>
-                  
+
                 <p>Trưởng nhóm CLB <a rel="nofollow" href="http://paypal.me/templatemo" target="_blank">Hoàng Kim
                     Tín</a> phó nhóm <a rel="nofollow" href="http://paypal.me/templatemo" target="_blank"> Nguyễn Huỳnh
                     Bảo Nhật </a></p>
@@ -490,9 +503,24 @@
         <div class="col-lg-8 offset-lg-2  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
           <a class="login_now" href="">Đăng ký thành viên ngay</a>
         </div>
+
+      </div>
+      <div class="form_login">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSclhyNKzNL8CTN8GNHeG0sTgN969IS__j6skE34_Mt5MMY5GA/viewform?embedded=true"
+          width="640" height="1737" frameborder="0" marginheight="0" marginwidth="0">Đang tải…</iframe>
       </div>
     </div>
   </div>
+  <script>
+    const login_now = document.querySelector('.login_now');
+    const form_login = document.querySelector('.form_login');
+
+    login_now.addEventListener('click', function (e) {
+      e.preventDefault();
+      form_login.style.display = "block";
+    });
+  </script>
 
 
   <div id="portfolio" class="our-portfolio section">
